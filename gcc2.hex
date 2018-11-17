@@ -1,27 +1,5 @@
-/*
- * GccApplication2.cpp
- *
- * Created: 11/17/2018 9:37:01 PM
- * Author : AEMIE
- */ 
-
 #include <avr/io.h>
 #include <avr/sfr_defs.h>
-/* 
-void moveforward(){
-	PORTD = 0b00100100 ;
-	memory= 'f' ; } 
-void turnright() { 
-	PORTD= 0b00000100 ;
-	memory='r' ; } 
-void turnleft(){ 
-	PORTD=0b00100000 ;
-	memory='l' ; } 
-void blank() { 
-	if (memory=='f'){  PORTD = 0b00100100 ; }
-	else if (memory='r') { PORTD= 0b00000100 ; }
-	else { PORTD=0b00000100 ; } 
-*/
 int main(void)
 {   
 	DDRA=0x00 ; 
@@ -57,8 +35,6 @@ int main(void)
 		    memory= 'f' ;}
 		else if(bit_is_clear(PINA,1)&& bit_is_clear(PINA,2) && bit_is_clear(PINA,3) && bit_is_clear(PINA,4) && bit_is_clear(PINA,5)){
 			PORTD=0b00000000 ; } 
-	    
-				
-    }
+      }
 }
 
