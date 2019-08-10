@@ -1,2 +1,1 @@
-# line-follower
-5 sensors
+## Line Follower
